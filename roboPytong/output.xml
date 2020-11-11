@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201111 14:37:27.352" rpa="false">
+<suite id="s1" name="roboPytong" source="C:\Users\Kuba\eclipse-workspace\roboPytong">
+<suite id="s1-s1" name="helloRobot" source="C:\Users\Kuba\eclipse-workspace\roboPytong\helloRobot.robot">
+<test id="s1-s1-t1" name="FirstSeleniumTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.morizon.pl</arg>
+<arg>ff</arg>
+</arguments>
+<msg timestamp="20201111 14:37:27.903" level="INFO">Opening browser 'ff' to base url 'https://www.morizon.pl'.</msg>
+<msg timestamp="20201111 14:37:27.906" level="INFO">Firefox driver log is always forced to to: C:\Users\Kuba\eclipse-workspace\roboPytong\geckodriver-3.log</msg>
+<status status="PASS" starttime="20201111 14:37:27.902" endtime="20201111 14:37:48.036"></status>
+</kw>
+<kw name="Wait For Cookies Popup And Close" library="mainPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${cookiesPopupAgreeButton}</arg>
+</arguments>
+<status status="PASS" starttime="20201111 14:37:48.038" endtime="20201111 14:37:48.073"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${cookiesPopupAgreeButton}</arg>
+</arguments>
+<msg timestamp="20201111 14:37:48.074" level="INFO">Clicking element '//button[contains(.,'ZGADZAM')]'.</msg>
+<status status="PASS" starttime="20201111 14:37:48.073" endtime="20201111 14:37:48.395"></status>
+</kw>
+<status status="PASS" starttime="20201111 14:37:48.037" endtime="20201111 14:37:48.396"></status>
+</kw>
+<kw name="Input City" library="mainPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${inputLocationText}</arg>
+<arg>${city}</arg>
+</arguments>
+<msg timestamp="20201111 14:37:48.397" level="INFO">Typing text 'Wroclaw' into text field '//*[@id="ps_location_text"]'.</msg>
+<status status="PASS" starttime="20201111 14:37:48.396" endtime="20201111 14:37:48.470"></status>
+</kw>
+<status status="PASS" starttime="20201111 14:37:48.396" endtime="20201111 14:37:48.471"></status>
+</kw>
+<kw name="Change Price" library="mainPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${priceDropdown}</arg>
+</arguments>
+<msg timestamp="20201111 14:37:48.472" level="INFO">Clicking element '//*[@id="ps_price"]'.</msg>
+<status status="PASS" starttime="20201111 14:37:48.472" endtime="20201111 14:37:48.718"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${priceFrom}</arg>
+<arg>${priceFromValue}</arg>
+</arguments>
+<msg timestamp="20201111 14:37:48.719" level="INFO">Typing text '200000' into text field '//*[@id="ps_price_from"]'.</msg>
+<status status="PASS" starttime="20201111 14:37:48.719" endtime="20201111 14:37:48.779"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${priceTo}</arg>
+<arg>${priceToValue}</arg>
+</arguments>
+<msg timestamp="20201111 14:37:48.780" level="INFO">Typing text '250000' into text field '//*[@id="ps_price_to"]'.</msg>
+<status status="PASS" starttime="20201111 14:37:48.779" endtime="20201111 14:37:48.848"></status>
+</kw>
+<status status="PASS" starttime="20201111 14:37:48.471" endtime="20201111 14:37:48.849"></status>
+</kw>
+<kw name="Submit" library="mainPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${submitButton}</arg>
+</arguments>
+<msg timestamp="20201111 14:37:48.850" level="INFO">Clicking element 'name:commit'.</msg>
+<status status="PASS" starttime="20201111 14:37:48.850" endtime="20201111 14:37:52.800"></status>
+</kw>
+<status status="PASS" starttime="20201111 14:37:48.849" endtime="20201111 14:37:52.800"></status>
+</kw>
+<kw name="Click First Element" library="searchResultPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${firstSearchElement}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20201111 14:37:52.801" endtime="20201111 14:37:52.921"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${firstSearchElement}</arg>
+</arguments>
+<msg timestamp="20201111 14:37:52.922" level="INFO">Clicking element '//*[@id="contentPage"]/div[1]/div/div/div/section/div[1]'.</msg>
+<status status="PASS" starttime="20201111 14:37:52.921" endtime="20201111 14:37:55.946"></status>
+</kw>
+<status status="PASS" starttime="20201111 14:37:52.801" endtime="20201111 14:37:55.946"></status>
+</kw>
+<kw name="Get Flat Price" library="listElementPage">
+<assign>
+<var>${price}</var>
+</assign>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>//li[@class="paramIconPrice"]</arg>
+</arguments>
+<status status="PASS" starttime="20201111 14:37:55.948" endtime="20201111 14:37:56.116"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>//li[@class="paramIconPrice"]</arg>
+</arguments>
+<assign>
+<var>${elem}</var>
+</assign>
+<msg timestamp="20201111 14:37:56.158" level="INFO">${elem} = Cena
+249 900 zł</msg>
+<status status="PASS" starttime="20201111 14:37:56.116" endtime="20201111 14:37:56.158"></status>
+</kw>
+<kw name="Drop Characters" library="removeCharacters">
+<arguments>
+<arg>${elem}</arg>
+</arguments>
+<assign>
+<var>${price}</var>
+</assign>
+<msg timestamp="20201111 14:37:56.160" level="INFO">${price} = 249900</msg>
+<status status="PASS" starttime="20201111 14:37:56.159" endtime="20201111 14:37:56.160"></status>
+</kw>
+<msg timestamp="20201111 14:37:56.161" level="INFO">${price} = 249900</msg>
+<status status="PASS" starttime="20201111 14:37:55.947" endtime="20201111 14:37:56.161"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${price}&gt;200000</arg>
+</arguments>
+<status status="PASS" starttime="20201111 14:37:56.161" endtime="20201111 14:37:56.162"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${price}&lt;250000</arg>
+</arguments>
+<status status="PASS" starttime="20201111 14:37:56.162" endtime="20201111 14:37:56.163"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201111 14:37:56.163" endtime="20201111 14:38:00.217"></status>
+</kw>
+<status status="PASS" starttime="20201111 14:37:27.902" endtime="20201111 14:38:00.217" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201111 14:37:27.463" endtime="20201111 14:38:00.218"></status>
+</suite>
+<status status="PASS" starttime="20201111 14:37:27.433" endtime="20201111 14:38:00.220"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="roboPytong">roboPytong</stat>
+<stat pass="1" fail="0" id="s1-s1" name="helloRobot">roboPytong.helloRobot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
